@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.2/papaparse.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js"></script>
+    <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+
+    <script defer src="train.js" type="module"></script>
+    <title>ML5 Neural Network Regression</title>
+</head>
+
+<body>
+    <canvas id="myChart" width="300" height="200"></canvas>
+    <form>
+        <h1>Predict phone price</h1>
+        <label for="'storage'">Storage in gb</label>
+        <input aria-label='d' type="number" id="storage" name="storage" min="0" max="512" value="128">
+        <label for="'cores'">Cores</label>
+        <input aria-label='d' type="number" id="cores" name="cores" min="0" max="8" value="8">
+        <label for 'frontcam'>Front Camera megapixel</label>
+        <input aria-label='d'type="number" id="frontcam" name="frontcam" min="0" max="100" value="8">
+        <label for 'backcam'>Back Camera megapixel</label>
+        <input aria-label='d'type="number" id="backcam" name="backcam" min="0" max="100" value="14">
+        <label for 'weight'>Weight in grams</label>
+        <input aria-label='d' type="number" id="weight" name="weight" min="0" max="1000" value="600">
+        <label for 'cpu'>Weight in grams</label>
+        <input aria-label='d' type="number" id="cpu" name="weight" min="0" max="1000" value="20">
+        <button type="button" id="submit">Submit</button>
+
+        
+    </form>
+    <div id="result"></div>
+</body>
+
+</html>

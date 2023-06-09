@@ -1,0 +1,31 @@
+
+form {
+
+    margin: 0 auto;
+    width: 400px;
+    padding: 1em;
+    border: 1px solid #CCC;
+    border-radius: 1em;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 1em;
+}
+
+input,
+textarea {
+    padding: 0.5em;
+    border: 1px solid #999;
+    border-radius: 0.3em;
+    margin-bottom: 1em;
+}
+
+#result {
+    font-weight: bold;
+    color: red;
+    font-size: large;
+    text-align: center;
+}
